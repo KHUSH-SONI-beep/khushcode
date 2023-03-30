@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+        }
+        </script>
+</head>
+
+<body>
+    <div id="header">
+        <img src="/images/bg-img.webp" alt="">
+        <div class="navbar">
+            <div class="logo">
+                <h3>jayantcode</h3>
+            </div>
+            <div class="container-nav" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+        </div>
+        <div class="inner-header">
+            <div>
+                <h2>Web-Developer</h2>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div>
+                <h1> Jayant Soni <br> The Frontend-Developer</h1>
+                <h4> To start Work click the icon given below</h4>
+            </div>
+            <div class="icon">
+                <img src="./images/icons8-facebook-circled.gif" alt="" width="50px">
+                <img src="./images/icons8-github (1).gif" alt="" width="50px">
+                <img src="./images/icons8-instagram.gif" alt="" width="50px">
+               <a href="https://web.whatsapp.com/"> <img src="./images/icons8-whatsapp.gif" alt="" width="50px"></a>
+            </div>
+        </div>
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> about us</button>
+            <button class="btn" onclick="filterSelection('nature')"> design</button>
+            <button class="btn" onclick="filterSelection('cars')"> client</button>
+            <button class="btn" onclick="filterSelection('people')"> People</button>
+        </div>
+
+        <!-- <div class="row">
+                <div class="column nature">
+                    <div class="content">
+                        <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+                        <h4>Mountains</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column nature">
+                    <div class="content">
+                        <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+                        <h4>Lights</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column nature">
+                    <div class="content">
+                        <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+                        <h4>Forest</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+
+                <div class="column cars">
+                    <div class="content">
+                        <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
+                        <h4>Retro</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column cars">
+                    <div class="content">
+                        <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
+                        <h4>Fast</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column cars">
+                    <div class="content">
+                        <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
+                        <h4>Classic</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+
+                <div class="column people">
+                    <div class="content">
+                        <img src="/w3images/people1.jpg" alt="Car" style="width:100%">
+                        <h4>Girl</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column people">
+                    <div class="content">
+                        <img src="/w3images/people2.jpg" alt="Car" style="width:100%">
+                        <h4>Man</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column people">
+                    <div class="content">
+                        <img src="/w3images/people3.jpg" alt="Car" style="width:100%">
+                        <h4>Woman</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+
+                <a href="#">Get explore</a>
+            </div> -->
+        </header>
+        <div id="sec-1">
+            <div class="content-2">
+
+                <div id="container">
+                    <div class="box">
+                        <div>
+                            <h4>this is aman gupta design</h4>
+                            <!-- <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, facere?</h3> -->
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div>
+                            <h4>this is aman gupta design</h4>
+                            <!-- <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, facere?</h3> -->
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div>
+                            <h4>this is aman gupta design</h4>
+                            <!-- <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, facere?</h3> -->
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div>
+                            <h4>this is aman gupta design</h4>
+                            <!-- <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, facere?</h3> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sec-2">
+            <div id="container-2">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box4"></div>
+                <div class="box5"> </div>
+            </div>
+        </div>
+
+
+        <script>
+            filterSelection("all")
+            function filterSelection(c) {
+                var x, i;
+                x = document.getElementsByClassName("column");
+                if (c == "all") c = "";
+                for (i = 0; i < x.length; i++) {
+                    w3RemoveClass(x[i], "show");
+                    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                }
+            }
+
+            function w3AddClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+                }
+            }
+
+            function w3RemoveClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    while (arr1.indexOf(arr2[i]) > -1) {
+                        arr1.splice(arr1.indexOf(arr2[i]), 1);
+                    }
+                }
+                element.className = arr1.join(" ");
+            }
+
+
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                });
+            }
+        </script>
+
+
+
+</body>
+
+</html>
